@@ -1,0 +1,14 @@
+main{
+    background-image: linear-gradient(to right,#a8c1ff,#402d96 );
+}
+
+.columns{
+column-count: 5;
+}
+
+.threecolumns{
+column-count: 3;
+column-gap: 2em;
+column-rule: dotted;
+column-rule-color: yellow ;
+}

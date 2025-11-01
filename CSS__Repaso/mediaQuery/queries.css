@@ -1,0 +1,60 @@
+.container {
+    width: 90%;
+    margin: 0  auto;
+}
+
+article,
+header {
+    height: 150px;
+}
+
+header {
+    background-color: yellow;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+@media screen and (min-width: 576px) {
+    header {
+        background-color: darkgoldenrod;
+        color: darkgreen;
+    }
+    .red,.blue{
+        float: left;
+        width: 50%;
+    }
+    .green{
+        float: left;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        background-color: chocolate;
+        color: darkgreen;
+    }
+
+    .red,.blue,.green{
+        width: calc(100%/3);
+    }
+}

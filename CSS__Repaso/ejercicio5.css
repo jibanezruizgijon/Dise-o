@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: Figtree;
+    src: url("Figtree-VariableFont_wght.ttf") format("ttf");
+    
+}
+
+p{
+  font-family: Roboto;  
+}
+h1, h2{
+    font-family: Figtree;
+}

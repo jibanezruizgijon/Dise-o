@@ -1,0 +1,29 @@
+main {
+    background: url("img/logos_web/css3.png") left no-repeat,
+        url("img/logos_web/html5.png") center no-repeat, 
+        url("img/logos_web/js.png") right no-repeat;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+
+.manifesto {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    color: white;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+p{
+    font-style: italic;
+}
+footer {
+    background-color: rgb(73, 73, 73);
+    color: white;
+}

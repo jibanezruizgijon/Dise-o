@@ -1,0 +1,14 @@
+body{
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title{
+    text-align: center;
+}
+.manifesto{
+    background-color: rgba(20, 20, 20, 0.7);
+    color: rgb(200, 200, 200);
+}

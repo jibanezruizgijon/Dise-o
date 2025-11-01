@@ -1,0 +1,28 @@
+body {
+    color: grey;
+    background-color: white;
+}
+
+a{
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+}
+a:hover{
+text-decoration: underline;
+}
+a:visited{
+    color: gray;
+}
+a :active{
+    color: blue;
+}
+a:focus{
+    font-size: 28px;
+    background-color: black;
+}
+
+table{
+ border: 2px dotted ;
+}
+

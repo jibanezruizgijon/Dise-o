@@ -1,0 +1,23 @@
+body{
+    background-color: #778899;
+    text-align: center;
+}
+
+h1, h2{
+    font-family: Impact;
+}
+
+i{
+    display: none;
+}
+
+p{
+    font-family: Cambria;
+    /* text-transform: uppercase; */
+    font-variant: small-caps; /* La primera letra es más grande que el resto */
+}
+
+span{
+    font-style: italic;
+    text-decoration: underline;
+}

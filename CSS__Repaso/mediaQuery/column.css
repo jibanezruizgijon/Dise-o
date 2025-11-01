@@ -1,0 +1,45 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+article {
+    height: 300px;
+    float: left;
+}
+
+.red {
+    background-color: red;
+    width: 20%;
+}
+
+.blue {
+    width: 50%;
+    background-color: blue;
+}
+
+.yellow {
+    width: 30%;
+    background-color: yellow;
+}
+
+@media screen and (max-width:992px) {
+    .red,
+    .blue {
+        width: 50%;
+    }
+
+    .yellow {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .blue,
+    .red {
+        width: 100%;
+    }
+
+}

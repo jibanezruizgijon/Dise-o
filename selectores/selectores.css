@@ -1,0 +1,76 @@
+/* Selectores de tipos*/
+* {
+    color: darkred;
+}
+
+h1{
+    color: darkblue;
+}
+
+h2 , h3 {
+    color: darkslateblue;   
+}
+
+h1, h2, h3 {
+font-family: Georgia;
+}
+
+/* Selectores combinados */
+/* 1 */
+nav a {
+    text-decoration: none;
+}
+/* 2 */
+main p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+/* 3 */
+section p {
+    font-size: 20px;
+}
+/* 4 */
+section > p{
+    font-size: 24px;
+}
+/* 5 */
+header h1, main h2{
+   text-align: center; 
+}
+/* 6 */
+main + section {
+    border: 2px dotted;
+    border-color: black;
+}
+/* 7 */
+main ~ * {
+    background-color: gray;
+}
+/* 8 */
+h2 + article{
+    width: 200px;
+    background-color: bisque;
+}
+
+/* Selectores por atributos */
+img[alt] {
+    width: 200px;
+}
+
+img[alt^="mon"]{
+    border-radius: 50%;
+}
+
+img[src*="2"]{
+   width: 300px; 
+}
+img[alt$="o"]{
+    border:5px solid orange;
+}
+img[alt="mono"]{
+   outline: 10px solid blue;
+}
+a[href="contacto.html"]{
+    text-decoration:line-through
+}
+
