@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior:smooth;
+}
+
+.navegador {
+    position: fixed;
+    padding: 20px;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(34, 59, 84);
+    display: flex;
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.enlaces {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(34, 59, 84);
+}
+
+.enlaces:hover {
+    color: rgb(34, 59, 84);
+    background-color: white;
+}
+
+.bloque {
+    font-size: 2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 3px 3px 5px rgb(41, 41, 41);
+    background-size: cover;
+}
+
+.parte1 {
+    background-image: url("img/develop.jpg");
+    background-repeat: no-repeat;
+}
+
+.parte2 {
+    background-image: url("img/codigo.jpg");
+    background-repeat: no-repeat;
+}
+
+.parte3 {
+    background-image: linear-gradient(to right, purple, rgb(255, 114, 253));
+}
