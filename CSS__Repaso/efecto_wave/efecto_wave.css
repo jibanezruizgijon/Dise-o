@@ -3,15 +3,11 @@
     padding: 0;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-}
 
 .hero {
     text-align: center;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-size: cover;
     background-image: url("NewYork2.jpg");
@@ -47,7 +43,8 @@ h1 {
 }
 
 .relleno {
-    width: 1000px;
+    position: absolute;
+    width: 100%;
     height: 1000px;
 }
 

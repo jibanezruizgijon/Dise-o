@@ -2,28 +2,33 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 .navegador {
+    justify-content: right;
+    align-items: center;
     position: fixed;
-    padding: 20px;
-    height: 30px;
+    height: 50px;
     width: 100%;
     background-color: rgb(34, 59, 84);
     display: flex;
 }
 
 a {
-
+    line-height: 20px;
     text-decoration: none;
     color: white;
 }
 
 .enlaces {
-    display: inline-block;
-    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
     text-align: center;
+    height: 100%;
+
 }
 
 a:hover {
@@ -35,6 +40,10 @@ a:hover {
     background-color: white;
 }
 
+.e3 {
+    margin-right: 30px;
+}
+
 .bloque {
     font-size: 2rem;
     height: 100vh;
@@ -42,17 +51,18 @@ a:hover {
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 3px 3px 5px rgb(41, 41, 41);
+    text-shadow: 4px 4px 5px rgb(41, 41, 41);
     background-size: cover;
 }
 
 .parte1 {
     background-image: url("img/develop.jpg");
     background-repeat: no-repeat;
+
 }
 
 .parte2 {
-    background-image: url("img/codigo.jpg");
+    background-image: linear-gradient(to top, rgba(155, 61, 61, 0.5), rgba(0, 0, 0, 0)), url("img/codigo.jpg");
     background-repeat: no-repeat;
 }
 
