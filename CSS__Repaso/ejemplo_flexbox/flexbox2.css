@@ -6,7 +6,6 @@
 }
 
 .navegador {
-    justify-content: right;
     align-items: center;
     position: fixed;
     height: 50px;
@@ -68,4 +67,17 @@ a:hover {
 
 .parte3 {
     background-image: linear-gradient(to right, purple, rgb(255, 114, 253));
+}
+
+.boton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: rgb(243, 197, 137);
+}
+
+.boton:hover{
+box-shadow: 1px 1px 10px darkgoldenrod;
 }

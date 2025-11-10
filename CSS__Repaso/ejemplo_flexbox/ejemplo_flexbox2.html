@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo Flexbox</title>
     <link rel="stylesheet" href="flexbox2.css">
 </head>
+
 <body>
-    
-        <nav class="navegador">
-           <div class="enlaces e1"><a href="#parte1">Inicio</a></div> 
-           <div class="enlaces e2"><a href="#parte2">Daw</a></div> 
-           <div class="enlaces e3"><a href="#parte3">Contacto</a></div> 
-        </nav>
-  
+
+    <nav class="navegador">
+        <div class="enlaces e1"><a href="#parte1">Inicio</a></div>
+        <div class="enlaces e2"><a href="#parte2">Daw</a></div>
+        <div class="enlaces e3"><a href="#parte3">Contacto</a></div>
+    </nav>
+
+
+
+    <button class="boton">Volver arriba</button>
+
+    <script>
+        const boton = document.querySelector(".boton");
+        // Cuando se hagan 900px de scroll muestra el botón
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 900) {
+                boton.style.display = 'block';
+            } else {
+                boton.style.display = 'none';
+            }
+        });
+
+        boton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
 
     <section class="bloque parte1" id="parte1">
         <h1>Desarrollo de aplicaciones web</h1>
@@ -25,4 +47,5 @@
         <h1>Infórmate</h1>
     </section>
 </body>
+
 </html>
