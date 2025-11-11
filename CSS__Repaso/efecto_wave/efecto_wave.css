@@ -19,22 +19,13 @@
 
 
 h1 {
-    
     display: block;
     font-size: 3rem;
     font-family: sans-serif;
 
-
     text-shadow: 2px 2px 3px rgb(95, 94, 94);
 }
 
-.padre {
-    position: absolute;
-}
-
-.hijo {
-    position: relative;
-}
 
 .wave {
     width: 100%;

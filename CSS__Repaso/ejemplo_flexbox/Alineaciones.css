@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 100vh;
+    background-image: url("img/zapato.jpg");
+    background-repeat: no-repeat;
+    flex: 1;
+}
+
+.etiqueta{
+text-align: center;
+}
+.e1 {
+    background-color: rgb(76, 152, 0);
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    padding: 18px 50px ;
+}
+
+.centro {
+    color: aqua;
+}
+
+.e2 {
+    background-color: rgb(76, 152, 0);
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    padding: 10px 170px;
+}
+
+@media screen and (max-width: 700px){
+    .e1, .e2{
+        align-self: center;
+        background-color: rgb(125, 35, 35); 
+    }
+
+
+}

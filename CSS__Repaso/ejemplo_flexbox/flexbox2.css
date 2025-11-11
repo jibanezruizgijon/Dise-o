@@ -52,17 +52,16 @@ a:hover {
     color: white;
     text-shadow: 4px 4px 5px rgb(41, 41, 41);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .parte1 {
     background-image: url("img/develop.jpg");
-    background-repeat: no-repeat;
 
 }
 
 .parte2 {
     background-image: linear-gradient(to top, rgba(155, 61, 61, 0.5), rgba(0, 0, 0, 0)), url("img/codigo.jpg");
-    background-repeat: no-repeat;
 }
 
 .parte3 {

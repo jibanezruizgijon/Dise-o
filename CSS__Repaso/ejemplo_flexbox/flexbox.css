@@ -7,10 +7,9 @@ body{
     margin: 50px;
     height: 650px;
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     display: flex;
-    flex-direction: column;
-   
+    /* flex-wrap: wrap; */
 }
 
 .item {
@@ -21,9 +20,7 @@ body{
     width: 150px;
     padding: 10px;
     line-height: 130px;
-    text-align: center;
-    
-
+    text-align: center; 
 }
 
 .first {
@@ -44,3 +41,5 @@ body{
 .fourth {
     background-color: purple;
 }
+   /* JERARQUÍA DE TAMAÑOS EN CSS */
+   /* max-content < width < flex-basis < max-width o min-width */
