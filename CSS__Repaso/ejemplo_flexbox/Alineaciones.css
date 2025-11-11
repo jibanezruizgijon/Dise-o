@@ -8,11 +8,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
     height: 100vh;
     background-image: url("img/zapato.jpg");
+    background-size: cover;
+    background-position: center; 
     background-repeat: no-repeat;
-    flex: 1;
+   
 }
 
 .etiqueta{
@@ -39,9 +40,20 @@ text-align: center;
 }
 
 @media screen and (max-width: 700px){
+    body {
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
     .e1, .e2{
-        align-self: center;
+       position: static;
         background-color: rgb(125, 35, 35); 
+    }
+    .e1{
+        margin-bottom: 445px;
+    }
+    .e2{
+        margin-top: 445px;
     }
 
 

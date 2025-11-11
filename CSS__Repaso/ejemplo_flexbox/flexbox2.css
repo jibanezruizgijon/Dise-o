@@ -6,42 +6,42 @@
 }
 
 .navegador {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     position: fixed;
     height: 50px;
     width: 100%;
     background-color: rgb(34, 59, 84);
-    display: flex;
+     padding-right: 20px;
+      gap: 20px;
 }
 
 a {
-    line-height: 20px;
     text-decoration: none;
     color: white;
-}
-
-.enlaces {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.enlaces {   
     width: 80px;
-    text-align: center;
     height: 100%;
 
 }
 
 a:hover {
     color: rgb(34, 59, 84);
+    background-color: white;
 }
 
 .enlaces:hover {
     color: rgb(34, 59, 84);
-    background-color: white;
 }
 
-.e3 {
-    margin-right: 30px;
-}
 
 .bloque {
     font-size: 2rem;
@@ -52,16 +52,17 @@ a:hover {
     color: white;
     text-shadow: 4px 4px 5px rgb(41, 41, 41);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .parte1 {
     background-image: url("img/develop.jpg");
+    background-repeat: no-repeat;
 
 }
 
 .parte2 {
     background-image: linear-gradient(to top, rgba(155, 61, 61, 0.5), rgba(0, 0, 0, 0)), url("img/codigo.jpg");
+    background-repeat: no-repeat;
 }
 
 .parte3 {
