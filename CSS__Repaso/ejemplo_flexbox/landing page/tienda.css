@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    height: 70px;
+}
+
+
+
+.container{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) { 
+    body{
+        background-color: aquamarine;
+    }
+}
