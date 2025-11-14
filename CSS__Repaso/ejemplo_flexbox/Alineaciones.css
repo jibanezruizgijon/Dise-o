@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("img/zapato.jpg");
+    background-image: url("zapato.jpg");
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -47,13 +47,12 @@ text-align: center;
     }
     .e1, .e2{
        position: static;
-        background-color: rgb(125, 35, 35); 
     }
     .e1{
-        margin-bottom: 450px;
+        margin-bottom: 350px;
     }
     .e2{
-        margin-top: 450px;
+        margin-top: 350px;
     }
 
 
