@@ -18,6 +18,7 @@ body {
 
 .etiqueta{
 text-align: center;
+ 
 }
 .e1 {
     background-color: rgb(76, 152, 0);
@@ -29,6 +30,7 @@ text-align: center;
 
 .centro {
     color: aqua;
+    background-color: rgba(0,0,0, 0.4);
 }
 
 .e2 {
@@ -46,7 +48,7 @@ text-align: center;
         justify-content:center;
     }
     .e1, .e2{
-       position: static;
+       position: static;      
     }
     .e1{
         margin-bottom: 350px;

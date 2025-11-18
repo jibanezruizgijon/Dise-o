@@ -9,23 +9,25 @@
 </head>
 
 <body>
+    <!-- Añadir otro div, el principal se alarga y el de dentro se limita en px para no crecer -->
+    <!--Contenedor general con margin 0 y max-width  -->
     <nav>
-        <div class="nav__izq"><a href="#" class="enlaceNavIzq">Tienda online</a></div>
+        <div class="nav__izq"><a href="#" class="enlace__izq">Tienda online</a></div>
 
         <div class="nav__der">
-            <div class="botonNav"><a href="#" class="enlaceNav">Inicio</a></div>
-            <div class="botonNav"><a href="#" class="enlaceNav">Carrito</a></div>
-            <div class="botonNav"><a href="#" class="enlaceNav">Contacto</a></div>
+            <div class="nav__boton"><a href="#" class="nav__enlace">Inicio</a></div>
+            <div class="nav__boton"><a href="#" class="nav__enlace">Carrito</a></div>
+            <div class="nav__boton"><a href="#" class="nav__enlace">Contacto</a></div>
         </div>
     </nav>
 
     <div class="container">
-        <section class="section1">
-            <h2>Se acerca el black Friday</h2>
-            <p>15% de descuento en todos los productos</p>
-            <div class="botonTienda"><a href="#">Ir a la tienda</a></div>
+        <section class="container__section1">
+            <h2 class="container__titulo">Se acerca el black Friday</h2>
+            <p class="container__texto">15% de descuento en todos los productos</p>
+            <div class="container__boton"><a href="#">Ir a la tienda</a></div>
         </section>
-        <section class="section2"><img src="shop.svg" alt="carrito"></section>
+        <section class="container__section2"><img src="shop.svg" alt="carrito"></section>
     </div>
 </body>
 

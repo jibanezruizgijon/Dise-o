@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: content-box;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -37,17 +37,17 @@ nav {
 
 
 /* div que contiene los enlaces */
-.botonNav {
+.nav__boton {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 100px;
     height: 100%;
 }
 
 /* div que contiene el enlace que se posiciona a la izquierda  */
 .nav__izq {
-    margin-left: 30px;
+    margin-left: 50px;
     margin-right: auto;
     align-self: flex-start;
     display: flex;
@@ -64,11 +64,12 @@ nav {
 }
 
 /* grosor de los enlaces del navegador */
-.enlaceNavIzq {
-    font-weight: 700; 
+.enlace__izq {
+    font-weight: 700;
 }
-.enlaceNav {
-    font-weight: 300; 
+
+.nav__enlace {
+    font-weight: 300;
 }
 
 /* Espacio para el último div del navegador  */
@@ -86,24 +87,25 @@ nav>div:last-of-type {
     max-width: 1200px;
 }
 
-.section1>h2 {
+.container__titulo {
     font-size: 2em;
 }
 
-.section1>p {
+.container__texto {
     color: rgb(60, 60, 60);
     margin-top: 20px;
 }
 
 
-.section2>img {
+img {
     display: flex;
     width: 100%;
-    flex-shrink: 1;
-    object-fit: cover;
+    /* No hace nada
+     flex-shrink: 1;
+    object-fit: cover; */
 }
 
-.botonTienda {
+.container__boton {
     margin-top: 30px;
     display: flex;
     width: 120px;
@@ -120,7 +122,6 @@ nav>div:last-of-type {
     nav {
         flex-direction: column;
         align-items: center;
-        height: auto;
         display: flex;
         height: 100px;
     }
@@ -133,8 +134,7 @@ nav>div:last-of-type {
     }
 
     .nav__izq {
-        align-items: center;
-        text-align: center;
+        margin-left: 0px;
         width: 100%;
     }
 
@@ -143,22 +143,24 @@ nav>div:last-of-type {
         flex-direction: column;
     }
 
-    .section2 {
+    .container__section2 {
         order: 1;
     }
 
-    .section2>img {
+    .container__section2>img {
         display: flex;
         width: 100%;
         flex-shrink: 1;
     }
 
-    .section1 {
+    .container__section1 {
         order: 2;
         margin-top: 50px;
     }
 
 }
+
+
 
 /* Poppins Light */
 @font-face {
