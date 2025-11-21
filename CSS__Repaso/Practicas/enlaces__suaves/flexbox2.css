@@ -56,13 +56,13 @@ a:hover {
 }
 
 .parte1 {
-    background-image: url("img/develop.jpg");
+    background-image: url("develop.jpg");
     background-repeat: no-repeat;
 
 }
 
 .parte2 {
-    background-image: linear-gradient(to top, rgba(155, 61, 61, 0.5), rgba(0, 0, 0, 0)), url("img/codigo.jpg");
+    background-image: linear-gradient(to top, rgba(155, 61, 61, 0.5), rgba(0, 0, 0, 0)), url("codigo.jpg");
     background-repeat: no-repeat;
 }
 
