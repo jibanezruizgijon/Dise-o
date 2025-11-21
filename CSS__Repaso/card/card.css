@@ -7,7 +7,7 @@
 
 /* Pequeño margen a cada texto de todas las cartas */
 .card p {
-    margin: 10px;
+    margin: 15px 0;
 }
 
 .impares p {
@@ -17,14 +17,18 @@
 /* Todos los títulos */
 h1 {
     padding: 10px 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 2rem;
 }
 
 /* Engloba a todas las cards */
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 50px;
     height: 100vh;
@@ -32,6 +36,7 @@ h1 {
 
 /* Todas las cards */
 .card {
+    height: 500px;
     flex-direction: column;
     display: flex;
     text-align: center;
@@ -78,14 +83,13 @@ h1 {
 
 .card__precio {
     color: rgb(39, 42, 59);
-    font-size: 1.5rem;
 }
 
 /* Todos los botones */
 .card__boton {
     margin: 30px 0;
     width: 150px;
-    height: 60px;
+    height: 70px;
 
 
 }
@@ -102,7 +106,9 @@ h1 {
     border-radius: 100px;
 }
 
-
+.container article:nth-of-type(1) {
+    margin-top: 50px;
+}
 
 
 /* Vista de tablet */
@@ -114,11 +120,15 @@ h1 {
 
     }
 
-     /* Priemr y segundo Artículo */
+    /* Priemr y segundo Artículo */
     .container article:nth-of-type(1),
     .container article:nth-of-type(2) {
         flex: 0 0 32.33%;
         min-width: 250px;
+    }
+
+    .container article:nth-of-type(1) {
+        margin-top: 0px;
     }
 
     /* Último artículo */
