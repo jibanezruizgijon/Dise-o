@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.contact {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+
+    background-image: linear-gradient(to right, rgba(103, 122, 230, 0.6) , rgba(116, 75, 163, 0.6)), url("mountain.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.contact__legend {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact__field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__input {
+    height: 30px;
+    width: 200px;
+}
+
+
+.contact__send {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.contact__btn {
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(120deg, rgb(103, 122, 230) 30%, rgb(116, 75, 163) 80%);
+    border: 0;
+}
+
+/* Vista de Escritorio */
+@media screen and (min-width: 768px) {}
