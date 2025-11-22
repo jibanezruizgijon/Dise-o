@@ -1,16 +1,24 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+    font-weight: 100 900;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family:"Raleway";
+    box-sizing: border-box;
 }
+
 
 .contact {
     text-align: center;
     width: 100%;
     height: 100vh;
     background-size: cover;
-
-    background-image: linear-gradient(to right, rgba(103, 122, 230, 0.6) , rgba(116, 75, 163, 0.6)), url("mountain.jpg");
+    background-image: linear-gradient(to right, rgba(103, 122, 230, 0.6), rgba(116, 75, 163, 0.6)), url("mountain.jpg");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -20,13 +28,16 @@
 }
 
 .contact__form {
+ 
+    margin: 1vh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    row-gap: 20px;
     max-width: 800px;
     text-align: center;
     background-color: white;
-    padding: 20px;
+    padding: 25px;
+    padding-left: 0;
     border-radius: 10px;
 
 }
@@ -38,19 +49,28 @@
 
 .contact__field {
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
     align-items: center;
+    width: 100%;
 }
 
-.contact__input, .contact__textarea {
+.contact__label {
+    width: 120px;
+}
+
+
+.contact__input,
+.contact__textarea {
+    display: flex;
+    align-items: center;
     height: 30px;
-    width: 500px;
+    flex-grow: 1;     
+    min-width: 400px;
 }
 
-.contact__textarea{
+.contact__textarea {
     height: 60px;
 }
-
 
 .contact__send {
     display: flex;
@@ -69,4 +89,41 @@
 }
 
 /* Vista de Escritorio */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+    /* Formulario */
+    .contact__form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+    }
+
+    .contact__legend {
+        align-self: center;
+        width: 100%;
+    }
+
+    .contact__field{
+        width: 100%; 
+    }
+
+    .contact__input,
+    .contact__textarea {
+        min-width: 50px;
+    }
+
+    .contact__field:nth-of-type(1),
+    .contact__field:nth-of-type(2) {
+        width: 50%;
+       
+    }
+
+    .contact__field:nth-of-type(1) {
+        padding-right: 10px; 
+    }
+
+    .contact__send {
+        width: 100%;
+    }
+}
