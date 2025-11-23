@@ -12,6 +12,13 @@ body {
     margin: auto;
 }
 
+/* Todos los enlaces */
+a {
+    display: flex;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
 /* Bloque General */
 .container {
     background-color: white;
@@ -48,7 +55,12 @@ body {
     margin-left: 0px;
 }
 
+.container-main,
+.container-servicios {
+    width: 100%;
+}
 
+/* De nuestro blog */
 .aside {
     background-color: rgb(212, 148, 106);
     margin-bottom: 30px;
@@ -61,20 +73,9 @@ body {
 
 li {
     color: black;
-
 }
 
-a {
-    display: flex;
-    align-self: flex-start;
-    text-decoration: none;
-}
-
-.container-main,
-.container-servicios {
-    width: 100%;
-}
-
+/* Servicios */
 .bloque-servicios__servicio {
     display: flex;
     justify-content: center;
@@ -94,11 +95,7 @@ a {
     background-color: rgb(118, 135, 168);
 }
 
-.footer {
-    background-color: rgb(21, 44, 84);
-    margin-top: 4rem;
-}
-
+/* Ajustes comunes para el header y el footer */
 .header,
 .footer {
     width: 100%;
@@ -109,17 +106,26 @@ a {
     align-items: center;
 }
 
+.footer {
+    background-color: rgb(21, 44, 84);
+    margin-top: 4rem;
+}
+
+
+/* Cambia a vista de Escritorio */
 @media screen and (min-width: 800px) {
 
     .header {
         flex-direction: row;
-
+       
     }
 
     .header__title {
         margin-left: 0px;
         text-align: start;
         width: 60%;
+
+         
     }
 
     .container-main {
@@ -146,6 +152,7 @@ a {
     .container-servicios {
         display: flex;
         width: 76%;
+       
     }
 
 }

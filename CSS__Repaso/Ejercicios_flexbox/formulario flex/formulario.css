@@ -1,3 +1,4 @@
+/*  Duente de letra variable Raleway  */
 @font-face {
     font-family: "Raleway";
     src: url(fonts/Raleway-VariableFont_wght.ttf);
@@ -8,11 +9,11 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:"Raleway";
+    font-family: "Raleway";
     box-sizing: border-box;
 }
 
-
+/*  Contenedor que engloba al formulario */
 .contact {
     text-align: center;
     width: 100%;
@@ -27,8 +28,8 @@
     background-position: center;
 }
 
+/* Formulario */
 .contact__form {
- 
     margin: 1vh;
     display: flex;
     flex-direction: column;
@@ -39,14 +40,15 @@
     padding: 25px;
     padding-left: 0;
     border-radius: 10px;
-
 }
 
+/*  Título del formulario */
 .contact__legend {
     font-size: 2rem;
     font-weight: 700;
 }
 
+/*  Cada bloque con label e input */
 .contact__field {
     display: flex;
     align-items: flex-end;
@@ -58,13 +60,13 @@
     width: 120px;
 }
 
-
+/* Inputs */
 .contact__input,
 .contact__textarea {
     display: flex;
     align-items: center;
     height: 30px;
-    flex-grow: 1;     
+    flex-grow: 1;
     min-width: 400px;
 }
 
@@ -72,12 +74,13 @@
     height: 60px;
 }
 
+/* Bloque del botón */
 .contact__send {
     display: flex;
     justify-content: flex-end;
-
 }
 
+/* Botón */
 .contact__btn {
     width: 80px;
     height: 40px;
@@ -96,7 +99,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-       
     }
 
     .contact__legend {
@@ -104,8 +106,8 @@
         width: 100%;
     }
 
-    .contact__field{
-        width: 100%; 
+    .contact__field {
+        width: 100%;
     }
 
     .contact__input,
@@ -116,11 +118,10 @@
     .contact__field:nth-of-type(1),
     .contact__field:nth-of-type(2) {
         width: 50%;
-       
     }
 
     .contact__field:nth-of-type(1) {
-        padding-right: 10px; 
+        padding-right: 10px;
     }
 
     .contact__send {
