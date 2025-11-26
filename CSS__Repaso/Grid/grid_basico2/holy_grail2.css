@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -51,6 +52,7 @@ p {
 @media screen and (min-width: 768px) {
 
     .container {
+        /* height: 100vh; */
         margin: auto;
         max-width: 800px;
         background-color: white;
