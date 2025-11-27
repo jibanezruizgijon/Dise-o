@@ -1,0 +1,31 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+a{
+   text-decoration: none;
+}
+
+/* CENTRAR */
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+/* Para poner el título arriba y enlace abajo */
+/* NavegadorCompleto */
+.navegador_completo {
+   display: flex;
+   flex-direction: column;
+}
+
+/* Botones de navegacion */
+.opciones_navefgacion {
+   display: flex;
+   flex-direction: row;
+}

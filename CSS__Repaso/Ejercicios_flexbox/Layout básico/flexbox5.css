@@ -125,8 +125,6 @@ li {
         margin-left: 0px;
         text-align: start;
         width: 60%;
-
-         
     }
 
     .container-main {
@@ -148,7 +146,7 @@ li {
 
     .aside {
         width: 240px;
-        order: 2;
+       order: 1;
         height: 120px;
     }
 

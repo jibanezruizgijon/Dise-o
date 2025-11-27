@@ -99,10 +99,6 @@ nav>div:last-of-type {
 
 img {
     display: flex;
-    width: 100%;
-    /* No hace nada
-     flex-shrink: 1;
-    object-fit: cover; */
 }
 
 .container__boton {
