@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Noto Serif";
     src: url(../fonts/NotoSerif-Regular.ttf);
-    weight: "400";
+    font-weight: "400";
     font-style: normal;
 }
 
