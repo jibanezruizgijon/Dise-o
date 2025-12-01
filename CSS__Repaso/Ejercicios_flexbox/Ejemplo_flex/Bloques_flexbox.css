@@ -5,6 +5,11 @@
    font-family: sans-serif;
 }
 
+:root{
+   --color-principal: red;
+}
+
+/* var(--color-principal) */
 a{
    text-decoration: none;
 }
