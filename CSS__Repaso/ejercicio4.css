@@ -1,0 +1,15 @@
+#definición{
+    font-size: 16px;
+    font-weight: bold;
+    color: #002D9E;
+}
+
+#párrafo_especial{
+    font-size: 14px;
+    font-style: italic;
+    color: #007C9E;
+}
+
+h1, h2{
+color:#009E71;
+}

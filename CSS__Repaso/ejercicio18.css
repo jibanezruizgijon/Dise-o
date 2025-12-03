@@ -1,0 +1,26 @@
+.card{
+    padding-top: 30px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 9px;
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    box-shadow: 3px 3px 6px 5px #5f5f5f;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    padding: 15px 20px;
+    background-image: linear-gradient(to right,#3c93e6,#db79a7);
+    color: white;
+    border-radius: 5px;
+     display: inline-block; 
+}
+
+img{
+    border-radius:50%;
+}

@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    /* OUTLINE: borde exterior, no cuenta para el tamaño */
+    outline: 2px dashed black;
+    margin: 50px auto;
+    height: 600px;
+    width: 90%;
+    max-width: 800px;
+    /* Aplico grid */
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, 200px); */
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));  */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    /* Lo va rellenando por columnas */
+    grid-auto-flow: column;
+}
+
+.item {
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    line-height: 100px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.first {
+    background-color: green;
+}
+
+
+.second {
+    background-color: red;
+}
+
+
+.third {
+    background-color: blue;
+}
+
+
+.fourth {
+    background-color: purple;
+}
+
+/* JERARQUÍA DE TAMAÑOS EN CSS */
+/* max-content < width < flex-basis < max-width o min-width */

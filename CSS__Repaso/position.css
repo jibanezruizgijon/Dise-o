@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sticky-menu {
+    background-color: darkslategray;
+    top: 0px;
+    padding: 20px;
+    width: 100%;
+    position: sticky;
+    display: flex;
+    z-index: 5;
+}
+
+.banner {
+    background-color: #acd7e6;
+    height: 200px;
+    margin: 20px auto;
+    width: 80%;
+    /* Para colocar los logos */
+    position: relative;
+}
+
+.logo {
+
+    height: 120px;
+    width: 120px;
+    position: relative;
+}
+
+.logo1 {
+    background-color: #556b2f;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.logo2 {
+    background-color: #ff8c00;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.content {
+    background-color: #e89579;
+   height: 600px;
+   margin: 20px auto;
+   width: 80%;
+   position: relative;
+
+   /* display: flex ;
+   align-items: center;
+   justify-content: center; */
+
+}
+
+.centered {
+    background-color: #91ed91;
+    line-height: 150px;
+    text-align: center;
+    height: 150px;
+    width: 50%;
+    /* para centrar en vertical. Añadiendo position: relative al padre */
+    margin-top: -75px;
+    position: absolute;
+    top: 50%;
+    /* Para centrara en horizontal */
+    left: 25%;
+
+}
+
+.menu-element {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: darkslategray;
+    z-index: 11;
+}
