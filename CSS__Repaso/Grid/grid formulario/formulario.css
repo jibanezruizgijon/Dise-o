@@ -27,18 +27,35 @@
 .formulario{
     display: grid;
     grid-template-rows: repeat(5, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .formulario__boton{
     background-color: var(--color-principal);
     color: white;
+    width: 140px;
 }
 
 @media screen and (min-width: 768px){
 
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .container__bloque{
+        grid-column: 2/-1;
+        order: 1;
+    }
+
+    .formulario{
+        grid-column: 1/2;
+    }
+
     .formulario__boton{
     background-color: red;
     }
+
+
 
 }
