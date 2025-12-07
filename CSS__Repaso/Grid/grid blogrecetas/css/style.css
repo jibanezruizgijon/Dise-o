@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -28,6 +30,19 @@ img {
     margin: 3rem 0;
 }
 
+/* Se le añade un máximo para que no se amplíe*/
+.container {
+    margin: auto;
+    max-width: 1100px;
+}
+
+/* Grid en el navegador  */
+.navigation .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 .navigation__link {
     padding: 1rem;
     color: white;
@@ -44,6 +59,7 @@ img {
 .hero__img {
     width: 100%;
 }
+
 
 .main-content__title {
     text-align: center;
@@ -65,6 +81,7 @@ blockquote {
     background-color: #c9c84a;
     color: white;
     font-size: 1.4rem;
+
 }
 
 .main-content__info p {
@@ -73,7 +90,8 @@ blockquote {
     text-align: center;
 }
 
-.main-content__img1, .main-content__img2 {
+.main-content__img1,
+.main-content__img2 {
     text-align: center;
 }
 
@@ -98,4 +116,63 @@ blockquote {
     margin: 3rem 0 0 0;
     padding: 1rem;
     text-align: center;
+}
+
+
+/*  Grid en el footer */
+footer>.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Grid en el main */
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 80px repeat(3, 1fr);
+    }
+
+    .main-content__title {
+        grid-column: 1 / -1;
+        grid-row: 1/ 2;
+    }
+
+    .main-content__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: 1 / 2;
+        grid-row: 2/ 3;
+    }
+
+    .main-content__post {
+        grid-column: 2 / 4;
+        grid-row: 2/ -1;
+    }
+
+    .navigation .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .main-content__img1 {
+        margin: auto;
+        grid-column: 4 / -1;
+        grid-row: 3/ 4;
+    }
+
+    .main-content__img2 {
+        margin: auto;
+        grid-column: 1 / 2;
+        grid-row: 4/ 5;
+    }
+
+    footer>.container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
 }
