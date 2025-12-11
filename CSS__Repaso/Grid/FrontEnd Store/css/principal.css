@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+

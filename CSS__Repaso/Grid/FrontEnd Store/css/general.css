@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: blue;
+    --color-secundario: #642B73;
+    --color-texto: #FFCE00;
+}
+
+.todo {
+    background-color: var(--color-principal);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+}
