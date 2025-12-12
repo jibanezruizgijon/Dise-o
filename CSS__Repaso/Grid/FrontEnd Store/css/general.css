@@ -4,14 +4,58 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "NotoSansTC";
+    src: url(../fonts/NotoSansTC-Regular.otf);
+    font-weight: "400";
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Staatliches" ;
+    src: url(../fonts/Staatliches-Regular.ttf);
+    font-weight: "400";
+    font-style: normal;
+}
 :root {
-    --color-principal: blue;
+    --color-principal: rgb(46, 164, 219);
     --color-secundario: #642B73;
     --color-texto: #FFCE00;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header__nav{
+    background-color: var(--color-secundario);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container__title{
+    text-align: center;
+    font-family: 'NotoSansTC';
+    font-weight: 700;
+}
+
+.cards__texto{
+    color: var(--color-texto);
+}
 .todo {
     background-color: var(--color-principal);
+   
 }
 
 .footer {
@@ -19,4 +63,9 @@
     justify-content: center;
     align-items: center;
     background-color: var(--color-secundario);
+    padding: 20px;
+}
+
+.footer__derechos{
+    color: white;
 }
