@@ -1,4 +1,37 @@
-.features{
+main {
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.nosotros {
+    display: flex;
+    gap: 20px;
+
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+.features__feature {
+    text-align: center;
+}
+
+.features__feature i {
+    font-size: 4rem;
+    /* Aumenta el tamaño (ajusta el número a tu gusto) */
+    color: white;
+    /* Cambia el color a blanco */
+    margin-bottom: 15px;
+    /* (Opcional) Separa un poco el icono del título */
 }

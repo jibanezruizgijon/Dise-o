@@ -26,11 +26,18 @@
 
 body {
     background-color: var(--color-principal);
+    min-height: 100vh;      /* Obliga al body a medir al menos el alto de la pantalla */
+    display: flex;          /* Activa el modo flexible */
+    flex-direction: column;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+p{
+    font-family: "NotoSansTC";
+    font-weight: 400;
 }
 
 .header__nav {
@@ -60,12 +67,16 @@ a {
 
 .header__enlaces {
     display: flex;
-    gap: 0 20px;
+    gap: 20px;
+    width: 20%;
+    min-width: 20px;
+    justify-content: space-around; /* Deja también un espacio proporcional antes del primero y después del último */
+    align-items: center; 
 }
 
 .container__title {
     text-align: center;
-    font-family: 'NotoSansTC';
+    font-family: 'Staatliches';
     font-weight: 700;
 }
 
@@ -80,6 +91,7 @@ a {
     align-items: center;
     background-color: var(--color-secundario);
     padding: 20px;
+    margin-top: auto;
 }
 
 .footer__derechos {
