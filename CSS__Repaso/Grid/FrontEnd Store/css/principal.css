@@ -11,15 +11,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-
+img {
+    max-width: 100%;
+    display: block; /* Elimina un pequeño espacio extra debajo de las imágenes */
+    height: auto;
+}
 .cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
     gap: 20px;
+}
+.cards__card-grande {
+    grid-column: 1 / -1; /* Ocupa las 2 columnas */
+    
+    /* CAMBIOS IMPORTANTES: */
+    width: 100%;         /* Fuerza a ocupar todo el ancho */
+    height: 100%;        /* Fuerza a ocupar todo el alto de la fila */
+    margin: 0;           /* Eliminamos el auto para que no se centre/encoja */
+    padding: 0;          /* Eliminamos el padding para que la foto toque los bordes */
+    overflow: hidden;    /* Asegura que nada se salga de los bordes redondeados si los hubiera */
+}
+
+/* Regla específica para la imagen DENTRO de la tarjeta grande */
+.cards__card-grande img {
+    width: 100%;         
+    height: 100%;        
+    object-fit: cover;   /* CLAVE: Esto hace que la imagen llene todo el hueco sin deformarse (hace zoom/recorte automático) */
+    display: block;
+}
+
+.footer{
+    margin-top: 50px;
 }
 
