@@ -68,8 +68,13 @@ p {
 .header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* Place-content es igual a usar los dos de abajo */
+    place-content: center;
+    /* justify-content: center;
+    align-items: center; */
+
+/* Es una forma de centrar  un elemento Grid absoluta y totalmente (vertical y horizontal) usando solo 3 líneas de código en el padre */
+    /* display: grid; place-items: center; height: 100vh; */
 
 }
 
