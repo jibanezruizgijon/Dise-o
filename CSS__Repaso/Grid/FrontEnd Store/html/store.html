@@ -8,47 +8,50 @@
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/fontawesome-all.min.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/store.css">
 </head>
 
 <body>
- 
 
-     <header class="header">
-            <picture class="header__imagen"><img src="../img/logo.png" alt="logo"></picture>
-            <div class="header__nav">
-                <section class="header__enlaces container">
-                    <a href="principal.html">Tienda</a>
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="store.html"><i class="fas fa-shopping-cart"></i></a>
-                </section>
-            </div>
-        </header>
 
-       
-        <main>
-            <h1 class="container__title cards__texto">REACT JS</h1>
-
-            <section>
-                <figure></figure>
-                <article>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis facilis officia unde
-                        aspernatur quod ad laborum reiciendis iusto maiores officiis praesentium, quasi id eum ipsam
-                        voluptatem! Voluptas provident in reprehenderit.</p>
-                    <form action="">
-                        <select name="" id="">
-                            <option value="">--Seleccionar</option>
-                        </select>
-                        <input type="number" placeholder="Cantidad">
-                        <input type="submit" value="AGREGAR AL CARRITO">
-                    </form>
-                </article>
+    <header class="header">
+        <picture class="header__imagen"><img src="../img/logo.png" alt="logo"></picture>
+        <div class="header__nav">
+            <section class="header__enlaces container">
+                <a href="principal.html">Tienda</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="store.html" class="enlace__seleccionado"><i class="fas fa-shopping-cart"></i></a>
             </section>
-        </main>
-         <footer class="footer">
-            <section class="container">
-                <h3>FRONTEND STORE-TODOS LOS DERECHOS RESERVADOS &copy; </Canvas> 2021</h3>
-            </section>
-        </footer>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <h1 class="container__title cards__texto">REACT JS</h1>
+
+        <section class="producto">
+            <figure class="producto__img"><img src="../img/1.jpg" alt=""></figure>
+            <article>
+                <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                    facilis officia unde
+                    aspernatur quod ad laborum reiciendis iusto maiores officiis praesentium, quasi id eum ipsam
+                    voluptatem! Voluptas provident in reprehenderit.</p>
+
+                <form action="" class="producto__formulario">
+                    <select name="" id="" class="producto__talla">
+                        <option value="">--Seleccionar</option>
+                    </select>
+                    <input type="number" placeholder="Cantidad" class="producto__cantidad">
+                    <input type="submit" value="AGREGAR AL CARRITO" class="producto__boton">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="container">
+            <h3 class="footer__derechos">FRONTEND STORE-TODOS LOS DERECHOS RESERVADOS &copy; 2021</h3>
+        </section>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,62 @@
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main{
+    max-width: 1100px;
+}
+
+.producto__formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    justify-items: start;
+    align-items: start;
+}
+
+.producto__descripcion {
+    grid-column: span 2;
+}
+
+.producto__cantidad {
+    grid-column: 2 / 3;
+    background-color: var(--color-principal);
+    color: white;
+    box-shadow: 0 0 0 7px var(--color-secundario);
+}
+
+.producto__talla {
+    background-color: var(--color-principal);
+    color: white;
+    box-shadow: 0 0 0 7px var(--color-secundario);
+}
+
+.producto__boton {
+    background-color: var(--color-texto);
+    color: black;
+    font-family: "Staatliches";
+    border: none;
+    grid-column: span 2;
+    grid-row: 3 / 4;
+    padding: 10px 40px;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .producto {
+        flex-direction: row;
+    }
+}
