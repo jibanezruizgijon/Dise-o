@@ -27,7 +27,7 @@ img {
     grid-auto-rows: auto;
     grid-auto-flow: dense;
     /* Las filas miden solo lo necesario */
-    /* Elimina grid-template-rows: repeat(9, 1fr); si lo tenías */
+   
     gap: 20px;
     margin: auto;
 }
@@ -35,8 +35,6 @@ img {
 .cards__card-grande {
     grid-column: 1 / span 2;
     /* Ocupa las 2 columnas */
-
-    /* CAMBIOS IMPORTANTES: */
     width: 100%;
     /* Fuerza a ocupar todo el ancho */
     height: 100%;
