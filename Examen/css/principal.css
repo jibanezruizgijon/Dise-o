@@ -73,6 +73,8 @@ header {
     background-image: url(../img/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    /* IMPORTANTE */
+    background-size: cover;
     width: 100%;
 }
 
@@ -177,16 +179,13 @@ footer {
 /* Vista Escritorio Parte del Header*/
 @media screen and (min-width: 992px) {
 
-    .header__navegador{
+    .header__navegador {
         justify-content: flex-end;
     }
 
     .nav__boton {
         width: 100px;
     }
-    /* .nav__enlace {
-        justify-content: flex-end;
-    } */
 
 }
 
@@ -407,6 +406,8 @@ footer {
 .footer {
     margin-top: 50px;
     background-image: url(../img/footer_bg.jpg);
+    /* IMPORTANTE */
+    background-size: cover;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -431,10 +432,3 @@ footer {
 .nav__enlace {
     font-size: 1.8rem;
 }
-
-
-/* Vista Tablet */
-@media screen and (min-width: 768px) {}
-
-/* Vista de Escritorio */
-@media screen and (min-width: 992px) {}
