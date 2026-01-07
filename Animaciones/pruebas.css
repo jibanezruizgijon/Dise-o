@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+}
+
+.container {
+    border: 2px dashed black;
+    margin: 50px;
+    height: 650px;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+}
+
+.item {
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: 700;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    line-height: 130px;
+    text-align: center; 
+}
+
+.first {
+    background-color: green;
+    transform: skewX(20deg);
+}
+
+
+.second {
+    background-color: red;
+    transform: rotate(25deg);
+}
+
+
+.third {
+    background-color: blue;
+    transform: scaleX(0.5);
+}
+
+
+.fourth {
+    background-color: purple;
+    transform: translate(40px,40px);
+}
+   /* JERARQUÍA DE TAMAÑOS EN CSS */
+   /* max-content < width < flex-basis < max-width o min-width */
