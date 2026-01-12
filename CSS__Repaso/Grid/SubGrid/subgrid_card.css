@@ -13,10 +13,12 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
 }
 
 .card {
-    grid-auto-rows: max-content;
+    /* No vale de nada porque solo se fija en la configuracion de las filas del padre */
+    /* grid-auto-rows: max-content; */
     grid-row: span 4;
    display: grid;
     grid-template-rows: subgrid;
