@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+}
+
+
+
+.container {
+    background-color: purple;
+    width: 90%;
+    height: 600px;
+    margin: 80px;
+    /* Para esconder lo que sobresalga del contenedor */
+    overflow: hidden;
+}
+
+.imagen {
+    transform: translate(0px, -130px);
+    transition: transform 0.3s ease-in;
+}
+
+.container:hover .imagen {
+    transform: translate(0px, 230px) rotate(-90deg);
+}

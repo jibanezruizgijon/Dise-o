@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin: 50px;
+}
+
+.container {
+    outline: 2px solid darkgray;
+    height: 650px;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+
+.element {
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.translate {
+    /* Estado inicial para la transición */
+    /*                   eje x   eje y */
+    transform:  translate(0px,    0px);
+    /* Primera variable es la duración de la animación, la segunda es el delay antes de empeazr la transición, la tercerea variable es la aceleración */
+    transition: transform 1s 1s ease;
+}
+
+/* Se añade la transición */
+.container:hover .translate{
+    transform: translate(500px, 400px );
+}
+
+.scale{
+    transform: scale(0);
+    transition: all 2s;
+}
+
+.container:hover .scale{
+    transform: scale(2) translate(500px);
+    background-color: red;
+    border-radius: 50%;
+}
+
+.rotate{
+    transition: all 2s;
+}
+
+.container:hover .rotate{
+    transform: rotate(2turn)
+}
+
+.skew{
+    transform: skewY(20deg);
+}
+
+.rotate2{
+    transition: all 5s;
+}
+
+.container:hover .rotate2{
+    transform: translate(400px) rotate(1turn);
+}
