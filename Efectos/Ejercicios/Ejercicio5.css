@@ -24,6 +24,7 @@ body {
     height: 50px;
 }
 
+/* Ajustes generales de enlace */
 .enlace {
     font-size: 1.4rem;
     width: 100%;
@@ -32,44 +33,82 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Enlace 1 */
 
 .enlace1 {
     border-radius: 50px;
     background-color: rgb(138, 75, 255);
     color: white;
-    transition: all 1s;
 }
 
-.boton1:hover .enlace1 {
-    background-color: rgb(186, 148, 255);
-    clip-path: inset(round 20px);
+.enlace1::before,
+.enlace2::before,
+.enlace3::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    transition: clip-path 1s;
+    /* clip-path: circle(0% at 50% 50%); */
+}
+
+.enlace1::before {
+    height: 100%;
+    opacity: 0.3;
+    background-color: white;
+    clip-path: circle(0% at 50% 50%);
+}
+
+.boton1:hover .enlace1::before {
+    clip-path: circle(150% at 50% 50%);
+}
+
+/*  Enlace 2 */
+
+.boton2 {
+    border-radius: 50px;
+    background-color: white;
 }
 
 .enlace2 {
     border-radius: 50px;
-    background-color: white;
+    /* background-color: white; */
     color: rgb(138, 75, 255);
-    transition: all 1s;
+    transition: color 1s;
+    z-index: 1;
+    
+}
+
+.enlace2::before {
+    height: 100%;
+    background-color: rgb(138, 75, 255);
+    z-index: -1;
+    clip-path: circle(0% at 0% 0%);
 }
 
 .boton2:hover .enlace2 {
-    background-color: rgb(138, 75, 255);
     color: white;
 }
 
+.boton2:hover .enlace2::before {
+    clip-path: circle(150% at 0% 0%);
+}
+
+/* Enlace 3 */
 .enlace3 {
     color: rgb(138, 75, 255);
-    position: relative;
-    transition: all 1s;
+}
+
+.enlace3::after {
+    bottom: 0;
+    height: 3px;
+    background-color: rgb(138, 75, 255);
+    clip-path: circle(0% at 50% 50%);
 }
 
 .boton3:hover .enlace3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 30px;
-    width: 65%;
-    height: 3px;
-    background-color: white;
+    clip-path: circle(150% at 50% 50%);
 }
