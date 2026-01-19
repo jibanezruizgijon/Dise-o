@@ -52,7 +52,6 @@ body {
     content: '';
     width: 100%;
     transition: clip-path 1s;
-    /* clip-path: circle(0% at 50% 50%); */
 }
 
 .enlace1::before {
@@ -67,7 +66,6 @@ body {
 }
 
 /*  Enlace 2 */
-
 .boton2 {
     border-radius: 50px;
     background-color: white;
@@ -75,7 +73,6 @@ body {
 
 .enlace2 {
     border-radius: 50px;
-    /* background-color: white; */
     color: rgb(138, 75, 255);
     transition: color 1s;
     z-index: 1;
