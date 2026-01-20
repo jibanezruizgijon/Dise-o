@@ -1,0 +1,51 @@
+* {}
+
+.container {
+
+    outline: 2px solid crimson;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.element {
+    background-color: darkmagenta;
+    border: 2px solid black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: color-changue;
+    animation-duration: 2s;
+}
+
+@keyframes color-changue  {
+    
+    from {
+        background-color: burlywood;
+    }
+
+    25%{
+        background-color: cornflowerblue;
+    }
+    50%{
+        background-color: darkgreen;
+    }
+    75%{
+        background-color: rebeccapurple;
+    }
+    to{
+        background-color: goldenrod;
+    }
+
+}
