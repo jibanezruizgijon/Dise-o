@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 90px;
+}
+
+/* Botones de activar y desactivar */
+.boton {
+    width: 200px;
+    height: 70px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+/* Se activa cuadno se pulsa el enlace que acciona el cuadrado */
+.boton:active {
+    transform: scale(1.3);
+}
+
+.enlace {
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cuadrado que se anima */
+.cuadro {
+    color: white;
+    font-size: 2rem;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: darkred;
+    transition: all 2s;
+}
+
+/* Se activa cada vez que se cambia la ruta interna */
+.cuadro:target {
+    transform: rotate(1turn);
+}

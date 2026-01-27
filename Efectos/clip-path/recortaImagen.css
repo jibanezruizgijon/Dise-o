@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.figura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img {
+    animation-name: recorte-imagen;
+    animation-duration: 3s;
+}
+
+.img2 {
+    animation-name: recorte-imagen2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+     animation-direction: alternate;
+}
+
+.img3 {
+    animation-name: recorte-imagen3;
+    animation-duration: 3s;
+}
+
+@keyframes recorte-imagen {
+    from {
+        clip-path: circle(0% at 50% 0%);
+    }
+
+    to {
+        clip-path: circle(150% at 50% 0%);
+    }
+}
+
+@keyframes recorte-imagen2 {
+    from {
+        clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+
+}
+
+@keyframes recorte-imagen3 {
+    from {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+}

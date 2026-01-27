@@ -37,14 +37,6 @@ body {
     overflow: hidden;
 }
 
-/* Enlace 1 */
-
-.enlace1 {
-    border-radius: 50px;
-    background-color: rgb(138, 75, 255);
-    color: white;
-}
-
 .enlace1::before,
 .enlace2::before,
 .enlace3::after {
@@ -53,6 +45,15 @@ body {
     width: 100%;
     transition: clip-path 1s;
 }
+
+/* Enlace 1 */
+
+.enlace1 {
+    border-radius: 50px;
+    background-color: rgb(138, 75, 255);
+    color: white;
+}
+
 
 .enlace1::before {
     height: 100%;
@@ -103,9 +104,9 @@ body {
     bottom: 0;
     height: 3px;
     background-color: rgb(138, 75, 255);
-    clip-path: circle(0% at 50% 50%);
+    clip-path: circle(0% at center);
 }
 
 .boton3:hover .enlace3::after {
-    clip-path: circle(150% at 50% 50%);
+    clip-path: circle(150% at center);
 }

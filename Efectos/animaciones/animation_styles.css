@@ -25,14 +25,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Animación */
     animation-name: color-changue;
-    animation-duration: 2s;
+    animation-duration:3s;
+    animation-delay: 2s;
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate;
+    animation-fill-mode: both;
 }
 
 @keyframes color-changue  {
     
     from {
         background-color: burlywood;
+        transform: scale(0) rotate(2turn);
     }
 
     25%{
@@ -46,6 +52,7 @@
     }
     to{
         background-color: goldenrod;
+        transform: scale(1);
     }
 
 }

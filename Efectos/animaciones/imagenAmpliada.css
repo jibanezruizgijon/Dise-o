@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.figura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.figura__escondida {
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    transform: translate(100%, 0%);
+}
+
+.enlace.target {
+    transform: translate(0%, 0%);
+}

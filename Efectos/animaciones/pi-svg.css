@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.pi-svg{
+    display: block;
+    margin-top: 0 auto;
+    width: 500px;
+}
+
+#pi{
+    transform-box:fill-box;
+    transform-origin: center;
+    animation-name: pi-animation;
+    animation-duration: 2s;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes pi-animation {
+    from {
+        transform: scale(0) rotate(0deg);
+    }
+
+    to{
+        transform: scale(1) rotate(6turn);
+    }
+}
