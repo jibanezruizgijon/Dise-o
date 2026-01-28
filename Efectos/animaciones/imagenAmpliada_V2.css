@@ -12,9 +12,10 @@ body {
 }
 
 .img__pequeña {
-    width: 250px;
+    width: 300px;
 }
 
+/* Bloque donde se muestra la segunda imagen ampliada */
 .figura__escondida {
     width: 100%;
     height: 100%;
@@ -25,14 +26,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(100%);
+    clip-path: inset(0 0 0 100%);
     transition: all 2s ease;
 }
 
+/* Se acciona cuando se pulsa en el enlace */
 #activar:target {
-    transform: translateX(0%);
+    clip-path: inset(0 0 0 0);
 }
 
+/* Coloca el botón dentro de la imagen */
 .figura__absoluta {
     position: relative;
 }
