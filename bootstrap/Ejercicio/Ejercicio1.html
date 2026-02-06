@@ -15,7 +15,7 @@
 <body>
 
     <!-- Diseño con todo dentro de un contenedor -->
-    <div class="container">
+    <div class="container-md">
         <!-- HEADER -->
         <header class="row justify-content-center m-3">
             <div class="col-4 col-md-3 col-lg-2">
@@ -96,15 +96,15 @@
             </div>
         </section>
 
-
         <!-- Título de anuncios -->
         <div class="bg-danger">
-            <h1 class="text-center text-light">ANUNCIOS</h1>
+            <h1 class="text-center text-light text-uppercase">ANUNCIOS</h1>
         </div>
         <!-- ANUNCIOS -->
-        <section class="row justify-content-center pb-3">
+        <main class="row justify-content-center pb-3">
             <div class="col-11 bg-secondary">
                 <div class="row justify-content-center ">
+                    <!-- CARD 1 -->
                     <article class="col-md-3 card mx-4  border-0 bg-secondary">
                         <h3 class="card-title text-center">EN VENTA</h3>
                         <img src="img/anuncio1.jpg" class="card-img-top" alt="Coche">
@@ -114,6 +114,7 @@
                                 harum. Deserunt, similique sapiente!</p>
                         </div>
                     </article>
+                    <!-- CARD 2 -->
                     <article class="col-md-3 card mx-4 border-0 bg-secondary">
                         <h3 class="card-title text-center">EN VENTA</h3>
                         <img src="img/anuncio1.jpg" class="card-img-top" alt="Coche">
@@ -123,6 +124,7 @@
                                 harum. Deserunt, similique sapiente!</p>
                         </div>
                     </article>
+                    <!-- CARD 3 -->
                     <article class=" col-md-3 card mx-4  border-0 bg-secondary">
                         <h3 class="card-title text-center">EN VENTA</h3>
                         <img src="img/anuncio1.jpg" class="card-img-top" alt="Coche">
@@ -134,26 +136,26 @@
                     </article>
                 </div>
             </div>
-        </section>
+        </main>
 
         <!-- Título contacto -->
         <div class="bg-danger">
             <h1 class="text-center text-light">CONTACTO</h1>
         </div>
         <!-- CONTACTO -->
-        <section class="row justify-content-center ">
-            <form action="" class="col-md-4 col-sm-6 mx-3">
+        <section class="row justify-content-center p-3 ">
+            <form action="#" class="col-md-4 col-sm-6 mx-3">
                 <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">Nombre y apellidos:</label>
-                    <input type="text" class="form-control" id="exampleInputName">
+                    <label for="Name" class="form-label">Nombre y apellidos:</label>
+                    <input type="text" class="form-control" id="Name" required>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail">
+                    <label for="Email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="Email" required>
                 </div>
-                <label for="exampleInputEmail" class="form-label">Email:</label>
+                <label for="textarea" class="form-label">Consulta:</label>
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    <textarea class="form-control" placeholder="Leave a comment here" id="textarea"
                         style="height: 100px"></textarea>
                 </div>
                 <button type="submit" class="btn btn-dark float-end mt-3">Enviar</button>
