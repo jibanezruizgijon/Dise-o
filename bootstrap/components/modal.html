@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- CDN ICONOS BOOTSRATP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <section class="container-xl">
+        <div class="row text-center mt-3">
+            <h1>Ejemplo de componente Bootstrap: Modal</h1>
+        </div>
+
+        <div class="row text-center mt-5">
+            <div class="col">
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modal1">
+                    Abrir Modal
+                </button>
+            </div>
+        </div>
+
+        <div id="modal1" class="modal fade" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- CABECERA -->
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5">Cabecera del modal</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- CUERPO -->
+                    <div class="modal-body">
+                        <p>Este es el contenido del cuerpo del modal.</p>
+                    </div>
+                    <!-- FOOTER -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+:root{
+    --bs-blue: #037bc0;
+    --bs-green: #8cbc00;
+    --bs-green-hover: #769c02;
+}
+
+.text-primary{
+    color: var(--bs-blue)!important;
+}
