@@ -17,3 +17,7 @@
 .text-primary{
     color: var(--bs-blue)!important;
 }
+
+.btn-succes{
+    background-attachment: var(--bs-green)!important;
+}
