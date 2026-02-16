@@ -24,7 +24,7 @@ h2{
     color:  $font1;
 }
 
-// Ejemplo de anidación con Sass (este comentario aparece tras la compilación)
+/** Ejemplo de anidación con Sass (este comentario aparece tras la compilación) */
 main {
     div{
         p{

@@ -1,0 +1,20 @@
+@use 'variables';
+
+
+.cuadro1{
+    width: variables.$ancho/2;
+    height: variables.$alto;
+    background-color: variables.$color__cuadro;
+}
+
+.cuadro2{
+    width: variables.$ancho/4;
+    height: variables.$alto;
+    background-color: variables.$color__cuadro;
+}
+
+.cuadro3{
+    width: variables.$ancho/8;
+    height: variables.$alto;
+    background-color: variables.$color__cuadro;
+}

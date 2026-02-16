@@ -1,0 +1,15 @@
+@use 'variables';
+
+body{
+    background-color: variables.$color__fondo;
+    font-size: variables.$font__size--general;
+}
+
+h1{
+    color: variables.$color__titulo;
+    font-size: variables.$font__size--titulo;
+}
+
+h2{
+    color: variables.$color__SubTitulo;
+}

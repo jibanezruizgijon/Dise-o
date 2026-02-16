@@ -1,0 +1,13 @@
+@use 'variables';
+
+.titulo{
+    color: variables.$color__titulo;    
+}
+
+.circulo{
+    color: variables.$color__circulos;    
+}
+
+.punto{
+    color: variables.$color__puntos;    
+}

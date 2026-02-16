@@ -1,0 +1,15 @@
+.content nav.sidebar {
+  @extend .info;
+}
+
+// This won't be extended, because `p` is incompatible with `nav`.
+p.info {
+  background-color: #dee9fc;
+}
+
+// There's no way to know whether `<div class="guide">` will be inside or
+// outside `<div class="content">`, so Sass generates both to be safe.
+.guide .info {
+  border: 1px solid rgba(#000, 0.8);
+  border-radius: 2px;
+}
