@@ -1,15 +1,21 @@
-@use 'variables';
+// @use para importar el archivo de variables
+// se usa el `as` para ponerle un nombre al llamar al archivo
+// With asigna valores por defecto
+@use 'variables' as v with (
+    $color__fondo: limegreen,
+    $color__titulo: darkorange
+);
 
 body{
-    background-color: variables.$color__fondo;
-    font-size: variables.$font__size--general;
+    background-color: v.$color__fondo;
+    font-size: v.$font__size--general;
 }
 
 h1{
-    color: variables.$color__titulo;
-    font-size: variables.$font__size--titulo;
+    color: v.$color__titulo;
+    font-size: v.$font__size--titulo;
 }
 
 h2{
-    color: variables.$color__SubTitulo;
+    color: v.$color__SubTitulo;
 }

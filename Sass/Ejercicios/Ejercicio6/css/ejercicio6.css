@@ -1,0 +1,12 @@
+.contenedor, .contenedor-con-altura {
+  background-color: rgb(222, 170, 170);
+  width: 1200px;
+  padding: 10px;
+}
+
+.contenedor-con-altura {
+  background-color: rgb(112, 112, 242);
+  height: 500px;
+}
+
+/*# sourceMappingURL=ejercicio6.css.map */

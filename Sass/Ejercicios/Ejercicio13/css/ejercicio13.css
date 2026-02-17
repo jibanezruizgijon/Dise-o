@@ -1,0 +1,30 @@
+/* BEM */
+/* Bloque Card */
+.card {
+  border: 2px solid limegreen;
+  color: cadetblue;
+}
+.card--grid {
+  color: limegreen;
+  display: grid;
+}
+.card__title {
+  font-size: 2rem;
+  text-align: center;
+}
+.card__img {
+  display: block;
+}
+.card__button {
+  border: 2px solid black;
+  padding: 1.6rem;
+  color: limegreen;
+}
+.card--tomato {
+  color: tomato;
+}
+.card--blue {
+  color: lightblue;
+}
+
+/*# sourceMappingURL=ejercicio13.css.map */

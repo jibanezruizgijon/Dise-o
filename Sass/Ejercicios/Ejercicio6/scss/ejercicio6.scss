@@ -1,15 +1,17 @@
-.content nav.sidebar {
-  @extend .info;
+$color1: rgb(222, 170, 170);
+$color2:rgb(112, 112, 242);
+$ancho: 1200px;
+$alto:500px;
+$espaciado:10px;
+
+.contenedor{
+  background-color: $color1;
+  width: $ancho;
+  padding: $espaciado;
 }
 
-// This won't be extended, because `p` is incompatible with `nav`.
-p.info {
-  background-color: #dee9fc;
-}
-
-// There's no way to know whether `<div class="guide">` will be inside or
-// outside `<div class="content">`, so Sass generates both to be safe.
-.guide .info {
-  border: 1px solid rgba(#000, 0.8);
-  border-radius: 2px;
+.contenedor-con-altura{
+@extend .contenedor;
+background-color: $color2;
+height: $alto;
 }

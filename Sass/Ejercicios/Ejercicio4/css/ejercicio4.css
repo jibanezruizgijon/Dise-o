@@ -1,13 +1,14 @@
-.titulo {
+ul {
   color: red;
+  font-size: 2rem;
 }
-
-.circulo {
+ul ul {
   color: green;
+  font-size: 1.3rem;
 }
-
-.punto {
+ul ul ul {
   color: blue;
-} 
+  font-size: 0.8rem;
+}
 
 /*# sourceMappingURL=ejercicio4.css.map */

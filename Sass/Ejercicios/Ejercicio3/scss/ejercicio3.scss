@@ -1,20 +1,21 @@
-@use 'variables';
-
+@use 'variables' as v;
+// Para qwue pueda usar el math
+@use 'sass:math';
 
 .cuadro1{
-    width: variables.$ancho/2;
-    height: variables.$alto;
-    background-color: variables.$color__cuadro;
+    width: calc(v.$ancho/2);
+    height: v.$alto;
+    background-color: v.$color__cuadro;
 }
 
 .cuadro2{
-    width: variables.$ancho/4;
-    height: variables.$alto;
-    background-color: variables.$color__cuadro;
+    width: math.div(v.$ancho,4);
+    height: v.$alto;
+    background-color: v.$color__cuadro;
 }
 
 .cuadro3{
-    width: variables.$ancho/8;
-    height: variables.$alto;
-    background-color: variables.$color__cuadro;
+    width: calc(v.$ancho/8);
+    height: v.$alto;
+    background-color: v.$color__cuadro;
 }

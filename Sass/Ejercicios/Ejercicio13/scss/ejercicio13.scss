@@ -1,0 +1,40 @@
+// Variables
+$main_color: cadetblue;
+$secondary_color: limegreen;
+
+/* BEM */
+
+/* Bloque Card */
+.card{
+    border: 2px solid $secondary_color;
+    color: $main_color;
+
+    &--grid {
+        color: $secondary_color;
+        display: grid;
+    }
+
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__img{
+        display: block;
+    }
+
+    &__button{
+        border: 2px solid black;
+        padding: 1.6rem;
+        color: $secondary_color;
+    }
+
+    &--tomato {
+        color: tomato;
+    }
+
+    &--blue {
+        color: lightblue;
+    }
+
+}

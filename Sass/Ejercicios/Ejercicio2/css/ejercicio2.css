@@ -1,15 +1,17 @@
-body {
-  background-color: rgba(170, 175, 128, 0.969);
-  font-size: 1.3rem;
+/* Error: This variable was not declared with !default in the @used module.
+ *   ,
+ * 5 |     $color__fondo: limegreen,
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss/ejercicio2.scss 5:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: This variable was not declared with !default in the @used module.\a   \2577 \a 5 \2502      $color__fondo: limegreen,\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss/ejercicio2.scss 5:5  root stylesheet";
 }
-
-h1 {
-  color: gray;
-  font-size: 1.55rem;
-}
-
-h2 {
-  color: rgb(83, 72, 168);
-} 
-
-/*# sourceMappingURL=ejercicio2.css.map */

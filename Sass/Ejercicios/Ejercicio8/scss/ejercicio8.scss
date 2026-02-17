@@ -1,13 +1,25 @@
-@use 'variables';
+@use 'sass:string';
 
-.titulo{
-    color: variables.$color__titulo;    
+
+@mixin centrado-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.circulo{
-    color: variables.$color__circulos;    
+
+section {
+    @include centrado-flex;
+    flex-direction: column;
 }
 
-.punto{
-    color: variables.$color__puntos;    
+@for $i from 0 through 9 {
+    .color#{$i} {
+        //background-color: string.unquote("#" + #{$i} + "00000");
+        background-color: string.unquote("##{$i}00000");
+        width: 90%;
+        margin: 2px;
+        padding: 10px;
+        color: white;
+    }
 }

@@ -1,13 +1,22 @@
-@use 'variables';
+@use 'variables' as v;
+@use 'sass:list';
+@use 'sass:map';
 
-.titulo{
-    color: variables.$color__titulo;    
-}
+// .titulo{color: list.nth(v.$colors, 1);  }
+// .circulo{color: list.nth(v.$colors, 2);  }
+// .punto{color: list.nth(v.$colors, 3);  }
 
-.circulo{
-    color: variables.$color__circulos;    
-}
+ul {
+    color: list.nth(v.$colors, 1);
+    font-size: map.get(v.$font-sizes, "xl");
 
-.punto{
-    color: variables.$color__puntos;    
+    ul {
+        color: list.nth(v.$colors, 2);
+        font-size: map.get(v.$font-sizes, "m");
+
+        ul {
+            color: list.nth(v.$colors, 3);
+            font-size: map.get(v.$font-sizes, "sm");
+        }
+    }
 }

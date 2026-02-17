@@ -1,0 +1,8 @@
+// Centrado de flex
+@mixin centrado-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// crear grid

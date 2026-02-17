@@ -1,0 +1,19 @@
+header h1 {
+  color: #5f5fa8;
+}
+
+main h2 {
+  color: #3dba3d;
+}
+
+footer h4 {
+  color: blue;
+}
+footer a {
+  color: gray;
+}
+footer a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=ejercicio5.css.map */

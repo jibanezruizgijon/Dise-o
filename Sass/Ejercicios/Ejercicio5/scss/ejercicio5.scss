@@ -1,0 +1,24 @@
+//Al poner el * no hace falta usar nombre porque lalma a todas las variables del archivo
+@use 'variables' as *;
+@use 'sass:list';
+
+header h1 {
+    color: list.nth($colors, 1);
+}
+
+main h2 {
+    color: list.nth($colors, 2);
+}
+
+footer {
+    h4 {
+        color: list.nth($colors, 3);
+    }
+
+    a {
+        color: list.nth($colors, 4);
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}

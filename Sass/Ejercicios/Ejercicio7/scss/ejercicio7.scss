@@ -1,4 +1,11 @@
-@function partir($tamaño, $nPartes) {
-  
-  @return nth($sequence, length($sequence));
+@function partir($size, $nPartes) {
+  $resultados: calc($size/$nPartes)*1px;
+  @return $resultados;
+}
+
+
+.decimo{
+  width: partir(2000, 10);
+  background-color: lightcoral;
+  height: 200px;
 }
