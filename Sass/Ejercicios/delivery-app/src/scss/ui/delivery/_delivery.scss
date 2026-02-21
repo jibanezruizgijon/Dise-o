@@ -1,0 +1,30 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+
+.delivery {
+    margin-bottom: 2rem;
+
+    &__heading {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    &__grid {
+        @include m.tablet {
+            @include m.do-grid(2);
+        }
+    }
+
+    &__text {
+        color: v.$secondary-color;
+    }
+
+    &__link {
+        font-size: 2rem;
+        font-weight: 700;
+        @include m.btn(v.$main-color, v.$white);
+        margin-bottom: 20px;
+        display: inline-block;
+        width: fit-content;
+    }
+}

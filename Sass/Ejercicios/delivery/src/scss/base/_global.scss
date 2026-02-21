@@ -1,0 +1,23 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    @include m.box-sizing(border-box);
+}
+
+body{
+    font-family: v.$main-font;
+    font-size: 2rem;
+}
+
+// Container
+.container{
+    margin:  0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+

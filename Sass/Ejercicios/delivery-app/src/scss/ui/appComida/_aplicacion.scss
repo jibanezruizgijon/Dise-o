@@ -1,0 +1,48 @@
+@use "../base/vars" as v;
+@use "../base/mixins" as m;
+
+.apps {
+    background-color: v.$grey;
+    padding: 2rem; // Mantenemos tu padding
+
+    // 1. El contenedor Grid
+    &__grid {
+        @include m.do-grid(1, 20px);
+
+        @include m.tablet {
+            @include m.do-grid(2, 20px);
+        }
+    }
+
+    // 2. La imagen (FUERA de &__grid para que sea .apps__image)
+    &__image {
+        grid-row: 2 / 3; // En móvil queremos que la imagen salga debajo del texto
+
+        img {
+            // Aumentamos el border-radius para cortar el fondo blanco de la imagen JPG
+            border-radius: 2rem; 
+        }
+
+        @include m.tablet {
+            grid-column: 1 / 2; // En tablet pasa a la columna izquierda
+            grid-row: unset;    // Quitamos la regla del móvil
+        }
+    }
+
+    // 3. Los textos y botones (FUERA de &__grid)
+    .app-stores {
+        grid-row: 1 / 2; // En móvil queremos que el texto salga primero (arriba)
+        text-align: center;
+        color: v.$secondary-color;
+
+        &__grid {
+            @include m.do-grid(2, 10px);
+        }
+
+        @include m.tablet {
+            grid-column: 2 / -1; // En tablet pasa a la columna derecha
+            margin: auto;        // Para centrarlo verticalmente
+            grid-row: unset;     // Quitamos la regla del móvil
+        }
+    }
+}

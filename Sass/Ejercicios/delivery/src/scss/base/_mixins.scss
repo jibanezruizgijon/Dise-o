@@ -1,5 +1,9 @@
 @use 'variables' as v;
 // MIXINS
+
+@mixin box-sizing ($borderBox){
+    box-sizing: $borderBox;
+}
 // Crear grid 
 @mixin crear-grid ($n-colums, $gap:10px){
     display: grid;
