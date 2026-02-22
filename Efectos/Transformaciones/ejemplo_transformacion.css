@@ -40,7 +40,7 @@ body {
 .translate {
     /* Estado inicial para la transición */
     /*                   eje x   eje y */
-    transform:  translate(0px,    0px);
+    transform:  translate(0px, 0px);
     /* Primera variable es la duración de la animación, la segunda es el delay antes de empeazr la transición, la tercerea variable es la aceleración */
     transition: transform 1s 1s ease;
 }

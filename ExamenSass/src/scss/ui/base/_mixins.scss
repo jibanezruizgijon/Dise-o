@@ -14,18 +14,6 @@
     gap: $gap;
 }
 
-@mixin do-grid-fill($gap: 10px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
-    gap: $gap;
-}
-
-@mixin do-grid-fit($gap: 10px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    gap: $gap;
-}
-
 @mixin centrar-flex($gap: 10px) {
     display: flex;
     flex-direction: column;

@@ -5,6 +5,7 @@ $x: 1;
     .ancho-col-#{$x}{
         width:calc(100/(($x*2))* 1%);
         background-color: coral;
+        text-align: center;
     }
     $x:$x+1;
 }

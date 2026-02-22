@@ -25,11 +25,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Animación */
+    
+    /* ANIMACIÓN */
     animation-name: color-changue;
     animation-duration:3s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction:normal;
     animation-fill-mode: forwards;
 }
 

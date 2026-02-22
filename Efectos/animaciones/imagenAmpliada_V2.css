@@ -40,12 +40,9 @@ body {
     position: relative;
 }
 
-.boton__salir {
-    position: absolute;
-}
-
 /* Botón para salir de la imagen ampliada */
 .boton__salir {
+     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
