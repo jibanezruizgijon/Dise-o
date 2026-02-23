@@ -6,6 +6,7 @@
     @include m.centrar-flex();
     text-align: center;
     color: v.$white;
+    background-color: v.$secondary-color;
 
     &__text {
         color: v.$white;
@@ -30,11 +31,11 @@
 
     }
 
-    &__heading{
+    &__heading {
         margin: 0 0 2rem 0;
     }
 
-    background-color: v.$secondary-color;
+
 
     &__copyright {
         margin-bottom: auto;

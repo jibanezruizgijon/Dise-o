@@ -1,3 +1,4 @@
+@use 'sass:map'; 
 //Variables
 //Fuentes
 $main-font: 'Roboto', sans-serif;
@@ -13,6 +14,7 @@ $black-weight: 900;
 //Colores
 $main-color: #e8505b;
 $secondary-color: #455a64;
+$title-color: #111517;
 $black: #000000;
 $grey: #eceeef;
 $white: #ffffff;
@@ -21,7 +23,8 @@ $white: #ffffff;
 $spacing: 5rem;
 
 //Tamaño media-queries
-$small: 480px;
-$medium: 768px;
-$ipad: 820px;
-$big: 1024px;
+$breakpoints: ("small": 576px, "medium": 768px, "big": 992px);
+// $small: 480px;
+// $medium: 768px;
+ $ipad: 820px;
+// $big: 1024px;

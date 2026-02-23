@@ -21,10 +21,11 @@
 
     &__link {
         font-size: 2rem;
-        font-weight: 700;
         @include m.btn(v.$main-color, v.$white);
-        margin-bottom: 20px;
-        display: inline-block;
-        width: fit-content;
+        &{
+            margin-bottom: 20px;
+            display: inline-block;
+            width: fit-content;
+        }
     }
 }

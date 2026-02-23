@@ -1,23 +1,24 @@
 @use 'vars' as v;
 @use 'sass:color';
+@use 'sass:map'; 
 
 //MIXINS
 
 //Media queries
 @mixin mobile {
-    @media screen and (min-width: v.$small) {
+    @media screen and (min-width: map.get(v.$breakpoints, "small")) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media screen and (min-width: v.$medium) {
+    @media screen and (min-width: map.get(v.$breakpoints, "medium")) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media screen and (min-width: v.$big) {
+    @media screen and (min-width: map.get(v.$breakpoints, "big")) {
         @content;
     }
 }
@@ -27,6 +28,7 @@
         @content;
     }
 }
+
 
 //Box-sizing
 @mixin box-sizing($box-model) {

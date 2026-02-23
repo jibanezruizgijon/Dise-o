@@ -412,7 +412,6 @@ footer {
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: cover;
     padding-top: 50px;
     height: 50rem;
 }
