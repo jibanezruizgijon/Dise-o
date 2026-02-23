@@ -2,8 +2,8 @@
 @use 'mixins' as m;
 
 @font-face {
-    font-family: "NotoSansTC";
-    src: url(../../../../build/fonts/);
+    font-family: "Raleway";
+    src: url(../../../../build/fonts/Raleway-Regular.ttf);
     font-weight: "400";
     font-style: normal;
 }
@@ -62,5 +62,11 @@ img {
     margin: 0 auto;
     max-width: 1200px;
     width: 95%;
+}
+
+button {
+    border: none;
+    font-family: inherit; // Para que herede la tipografía del body
+    cursor: pointer;
 }
 

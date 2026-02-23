@@ -2,6 +2,32 @@
 @use 'sass:color';
 
 //MIXINS
+
+//Media queries
+@mixin mobile {
+    @media screen and (min-width: v.$small) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: v.$medium) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: v.$big) {
+        @content;
+    }
+}
+
+@mixin ipad {
+    @media screen and (min-width: v.$ipad) {
+        @content;
+    }
+}
+
 //Box-sizing
 @mixin box-sizing($box-model) {
     box-sizing: $box-model;
@@ -29,6 +55,12 @@
     gap: $gap;
 }
 
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 //Botón
 @mixin btn($bgcolor, $fgcolor) {
     background-color: $bgcolor;
@@ -53,27 +85,3 @@
     }
 }
 
-//Media queries
-@mixin mobile {
-    @media screen and (min-width: v.$small) {
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media screen and (min-width: v.$medium) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media screen and (min-width: v.$big) {
-        @content;
-    }
-}
-
-@mixin ipad {
-    @media screen and (min-width: v.$ipad) {
-        @content;
-    }
-}
