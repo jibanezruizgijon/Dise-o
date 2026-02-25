@@ -1,0 +1,44 @@
+@use "../base/vars" as v;
+@use "../base/mixins" as m;
+
+.productos {
+    text-align: center;
+
+    &__grid {
+        @include m.do-grid(1);
+
+        @include m.tablet {
+            @include m.do-grid(2);
+        }
+
+        @include m.desktop {
+            @include m.do-grid(4);
+        }
+    }
+
+    &__precio {
+        color: v.$grey;
+        font-size: 2rem;
+    }
+
+    &__producto {
+        @include m.centrar-flex(0);
+        text-align: center;
+    }
+
+    &__titulo {
+        color: v.$secondary-color;
+    }
+
+    &__image {
+        overflow: hidden;
+    }
+
+    &__img {
+        transition: transform 0.3s;
+    }
+
+    &__img:hover {
+        transform: scale(1.2);
+    }
+}

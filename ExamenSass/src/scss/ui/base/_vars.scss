@@ -1,30 +1,18 @@
 @use 'sass:map'; 
 //Variables
 //Fuentes
-$main-font: 'Roboto', sans-serif;
-$secondary-font: 'Raleway', sans-serif;
+$main-font: 'Lato', sans-serif;
 
 
-// Grosor de fuentes
-$regular: 400;
-$medium-weight: 500;
-$bold: 700;
-$black-weight: 900;
 
 //Colores
-$main-color: #e8505b;
-$secondary-color: #455a64;
-$title-color: #111517;
-$black: #000000;
-$grey: #eceeef;
-$white: #ffffff;
+$main-color: #7bd1d7;
+$secondary-color: #e082a8;
+$grey: #808080;
+$fondo: #f8f8f8;
 
-//Separación
-$spacing: 5rem;
+
 
 //Tamaño media-queries
-$breakpoints: ("small": 576px, "medium": 768px, "big": 992px);
-// $small: 480px;
-// $medium: 768px;
- $ipad: 820px;
-// $big: 1024px;
+$breakpoints: ("medium": 768px, "big": 1024px);
+

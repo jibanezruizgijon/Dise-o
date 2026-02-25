@@ -108,7 +108,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .navigation__link--register {
-    width: auto;
+    width: fit-content;
   }
 }
 
@@ -162,7 +162,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .form__submit {
-    width: auto;
+    width: fit-content;
   }
 }
 @media screen and (min-width: 768px) {
@@ -390,13 +390,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .delivery__link {
-    width: auto;
+    width: fit-content;
   }
-}
-.delivery__link {
-  margin-bottom: 20px;
-  display: inline-block;
-  width: fit-content;
 }
 
 .apps {
@@ -417,9 +412,8 @@ img {
 }
 .apps__image {
   grid-row: 2/3;
-}
-.apps__image img {
   border-radius: 2rem;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .apps__image {

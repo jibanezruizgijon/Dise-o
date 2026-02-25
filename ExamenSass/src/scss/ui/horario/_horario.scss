@@ -1,0 +1,27 @@
+@use "../base/vars" as v;
+@use "../base/mixins" as m;
+
+.horarios {
+    background-color: v.$main-color;
+    color: white;
+    @include m.do-grid(1);
+
+    &__horario {
+        @include m.centrar-flex;
+        padding: 15px;
+        text-align: center
+    }
+
+    @include m.tablet {
+        @include m.do-grid(2);
+    }
+
+    &__image {
+        width: 100%;
+        background-size: cover;
+        &--img {
+            object-fit: cover;
+        }
+    }
+
+}

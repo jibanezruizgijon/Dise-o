@@ -1,0 +1,43 @@
+@use "../base/vars" as v;
+@use "../base/mixins" as m;
+
+.opciones {
+    margin-bottom: 20px;
+    @include m.do-grid(1);
+    justify-content: center;
+
+    @include m.tablet {
+        @include m.do-grid(3);
+    }
+
+    &__opcion {
+        @include m.do-grid(1);
+        margin: auto;
+
+        &--img {
+            transition: transform 0.3s;
+            box-shadow: 0px 0px 0px 3px #ffffff;
+        }
+
+        &--img:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+    }
+
+    &__texto {
+        @include m.centrar-flex(0px);
+        width: 80%;
+        margin: auto;
+        background-color: white;
+        transform: translateY(-40px);
+    }
+
+    &__btn {
+        @include m.btn(v.$secondary-color, white);
+
+        @include m.tablet {
+            width: 100%;
+        }
+
+    }
+}

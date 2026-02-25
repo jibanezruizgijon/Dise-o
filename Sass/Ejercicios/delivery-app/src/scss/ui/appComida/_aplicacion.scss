@@ -17,15 +17,12 @@
     // 2. La imagen (FUERA de &__grid para que sea .apps__image)
     &__image {
         grid-row: 2 / 3; // En móvil queremos que la imagen salga debajo del texto
-
-        img {
-            // Aumentamos el border-radius para cortar el fondo blanco de la imagen JPG
-            border-radius: 2rem; 
-        }
+        border-radius: 2rem;
+        overflow: hidden;
 
         @include m.tablet {
             grid-column: 1 / 2; // En tablet pasa a la columna izquierda
-            grid-row: unset;    // Quitamos la regla del móvil
+            grid-row: unset; // Quitamos la regla del móvil
         }
     }
 
@@ -41,8 +38,8 @@
 
         @include m.tablet {
             grid-column: 2 / -1; // En tablet pasa a la columna derecha
-            margin: auto;        // Para centrarlo verticalmente
-            grid-row: unset;     // Quitamos la regla del móvil
+            margin: auto; // Para centrarlo verticalmente
+            grid-row: unset; // Quitamos la regla del móvil
         }
     }
 }

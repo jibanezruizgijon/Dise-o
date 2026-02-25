@@ -1,0 +1,27 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+
+
+.footer {
+
+    &__grid {
+        @include m.do-grid(1, 3rem);
+
+        @include m.tablet {
+            @include m.do-grid(3);
+        }
+    }
+
+    &__seccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center
+    }
+
+    &__copyright {
+        @include m.centrar-flex();
+        width: 100%;
+    }
+}

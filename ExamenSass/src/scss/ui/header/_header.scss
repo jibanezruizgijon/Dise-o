@@ -1,7 +1,26 @@
 @use "../base/vars" as v;
+@use "../base/mixins" as m;
 
-.header{
-    &__titulo{
-        color: v.$main-color;
+.header {
+
+    &__logo {
+        @include m.centrar-flex;
+        padding: 15px;
+        @include m.tablet {
+            @include m.flex-between;
+        }
+    }
+
+    &__parrafo{
+        color: v.$grey;
+    }
+    &__hero {
+        margin-top: 20px;
+        box-shadow: 0px 9px 13px 0px #5f5f5f;
+    }
+
+    &__texto {
+        padding: 40px;
+        text-align: center;
     }
 }

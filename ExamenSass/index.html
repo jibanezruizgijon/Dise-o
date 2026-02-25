@@ -10,28 +10,218 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header container">
-        <div class="header__logo">
-            <img src="build/img/logo.svg" alt="">
-        </div>
+    <header class="header">
+        <div class="header__logo container">
+            <img src="build/img/logo.png" alt="logo">
 
-        <nav class="navigation">
-            <a href="#" class="navigation__link">Iniciar Sesión</a>
-            <a href="#" class="navigation__link">Crear Cuenta</a>
-            <a href="#" class="navigation__link navigation__link--register">Registrar Restaurante</a>
-        </nav>
+            <div class="iconos">
+                <a href="#"><img src="build/img/icono_facebook.svg" alt="Icono facebook"></a>
+                <a href="#"><img src="build/img/icono_twitter.svg" alt="Icono Twitter"></a>
+                <a href="#"><img src="build/img/icono_instagram.svg" alt="Icono Instagram"></a>
+                <a href="#"><img src="build/img/icono_youtube.svg" alt="Icono Youtube"></a>
+                <a href="#"><img src="build/img/icono_tiktok.svg" alt=" Icono tik tok"></a>
+            </div>
+        </div>
+        <!-- BARRA NAVEGACIÓN -->
+        <div class="navigation">
+            <nav class="navigation__center container">
+                <a href="#" class="navigation__link">Inicio</a>
+                <a href="#" class="navigation__link">Nosotros</a>
+                <a href="#" class="navigation__link">Servicios</a>
+                <a href="#" class="navigation__link">Productos</a>
+                <a href="#" class="navigation__link">Contacto</a>
+            </nav>
+        </div>
+        <div class="container">
+            <img class="header__hero" src="build/img/hero.jpg" alt="hero">
+        </div>
+        <div class="header__texto">
+            <p class="italianno">bienvenidos/as a nuestro</p>
+            <h1 class="Lato">SITIO WEB</h1>
+            <h3 class="header__parrafo">Te sentirás como nuevo/a con nuestros masajistas profesionales</h3>
+        </div>
     </header>
+    <!-- OPCIONES -->
+    <section class="opciones container">
+        <!-- ARTICULO 1 -- NOSOTROS -->
+        <article class="opciones__opcion">
+            <img src="build/img/servicio_01.jpg" class="opciones__opcion--img" alt="Nosotros">
+            <div class="opciones__texto">
+                <p class="italianno">conoce más sobre</p>
+                <h2 class="Lato">NOSOTROS</h2>
+                <a href="#" class="opciones__btn">LEER MÁS</a>
+            </div>
+        </article>
+
+        <!-- ARTICULO 2 -- SERVICIOS -->
+        <article class="opciones__opcion">
+            <img src="build/img/servicio_02.jpg" class="opciones__opcion--img" alt="Servicios">
+            <div class="opciones__texto">
+                <p class="italianno">nuestros</p>
+                <h2 class="Lato">SERVICIOS</h2>
+                <a href="#" class="opciones__btn">LEER MÁS</a>
+            </div>
+        </article>
+        <!-- ARTICULO 2 -- SERVICIOS -->
+        <article class="opciones__opcion">
+            <img src="build/img/servicio_03.jpg" class="opciones__opcion--img" alt="Servicios">
+            <div class="opciones__texto">
+                <p class="italianno">visita nuestra</p>
+                <h2 class="Lato">TIENDA</h2>
+                <a href="#" class="opciones__btn">LEER MÁS</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- HORARIOS -->
+    <section class="horarios">
+        <div class="horarios__horario">
+
+            <h1>HORARIOS</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem doloribus atque nemo,
+                nesciunt
+                hic architecto incidunt ipsa doloremque, nulla nihil ipsum voluptas quaerat, et similique pariatur
+                corrupti explicabo quam quidem.</p>
+            <table class="tabla">
+                <tr class="tabla__titulo">
+                    <th>Día</th>
+                    <th>De</th>
+                    <th>Hasta</th>
+                </tr>
+                <tr class="tabla__fila">
+                    <td>Lunes</td>
+                    <td>10:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr class="tabla__fila">
+                    <td>Martes</td>
+                    <td>10:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr class="tabla__fila">
+                    <td>Miércoles</td>
+                    <td>10:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr class="tabla__fila">
+                    <td>Jueves</td>
+                    <td>10:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr class="tabla__fila">
+                    <td>Viernes</td>
+                    <td>10:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr class="tabla__fila">
+                    <td>Sábado</td>
+                    <td>10:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr class="tabla__fila">
+                    <td>Domingo</td>
+                    <td colspan="2">Cerrado</td>
+                </tr>
+            </table>
+        </div>
+        <div class="horarios__image">
+            <img src="build/img/bg_horarios.jpg" class="horarios__image--img" alt="Horarios">
+        </div>
+    </section>
 
     <!-- MAIN -->
-    <main class=" ">
-        <img src="build/img/opinion3.jpg" alt="">
+    <main class="productos container">
+        <p class="italianno">nuestros</p>
+        <h1 class="Lato">PRDOUCTOS</h1>
+        <section class="productos__grid">
+            <!-- Producto 1 -->
+            <article class="productos__producto">
+                <div class="productos__image">
+                    <img src="build/img/producto_01.jpg" class="productos__img" alt="Producto 1">
+                </div>
+                <h2 class="productos__titulo">Producto 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="productos__precio">30€</p>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="productos__producto">
+                <div class="productos__image">
+                    <img src="build/img/producto_02.jpg" class="productos__img" alt="Producto 2">
+                </div>
+                <h2 class="productos__titulo">Producto 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="productos__precio">40€</p>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="productos__producto">
+                <div class="productos__image">
+                    <img src="build/img/producto_03.jpg" class="productos__img" alt="Producto 3">
+                </div>
+                <h2 class="productos__titulo">Producto 3</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="productos__precio">50€</p>
+            </article>
+
+            <!-- Producto 4 -->
+            <article class="productos__producto">
+                <div class="productos__image">
+                    <img src="build/img/producto_04.jpg" class="productos__img" alt="Producto 4">
+                </div>
+                <h2 class="productos__titulo">Producto 4</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="productos__precio">55€</p>
+            </article>
+
+        </section>
     </main>
-    <!-- SECTION -->
-    <section></section>
+    <!-- CITA -->
+    <section class="cita">
+        <div class="cita__texto">
+            <h1>PIDE UNA CITA</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam earum sit vel dolores, laborum impedit
+                provident minus quam maiores illum sint? Esse quod eveniet veritatis amet corporis sint nemo suscipit.
+            </p>
+            <a href="#" class="cita__btn">LEER MÁS</a>
+        </div>
+    </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer container">
+        <div class="footer__grid">
+            <!--  NOSOTROS -->
+            <div class="footer__seccion">
+                <h2 class="Lato">NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam velit atque veritatis magni
+                    asperiores
+                    aut fugit? Consequatur cum consequuntur porro laboriosam aspernatur eos eveniet omnis, tenetur,
+                    doloremque commodi nostrum magni.</p>
+            </div>
 
+            <!-- HORARIO -->
+            <div class="footer__seccion">
+                <h2 class="Lato">HORARIO</h2>
+                <p>Lun-Vie:10h.-20h.</p>
+                <p>Sabado:10AM.-23h.</p>
+                <p>Domingo: Cerrado</p>
+
+            </div>
+            <!-- CONTACTO -->
+            <div class="footer__seccion">
+                <h2 class="Lato">CONTACTO</h2>
+                <p>Av.Constitución,14</p>
+                <div class="iconos">
+                    <a href="#"><img src="build/img/icono_facebook.svg" alt="Icono facebook"></a>
+                    <a href="#"><img src="build/img/icono_twitter.svg" alt="Icono Twitter"></a>
+                    <a href="#"><img src="build/img/icono_instagram.svg" alt="Icono Instagram"></a>
+                    <a href="#"><img src="build/img/icono_youtube.svg" alt="Icono Youtube"></a>
+                    <a href="#"><img src="build/img/icono_tiktok.svg" alt=" Icono tik tok"></a>
+                </div>
+            </div>
+        </div>
+        <!-- DERECHOS RESERVADOS -->
+        <p class="footer__copyright">Healty Spa. Todos los derechos reservados</p>
     </footer>
 </body>
 
